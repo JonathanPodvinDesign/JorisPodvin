@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin: 50px 0;
+
+  & h2 {
+    position: relative;
+    font-family: serif;
+    font-style: italic;
+    font-size: 20px;
+    color: #7d98a1;
+    margin: 50px 0;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: "Montserrat";
+      font-size: 65px;
+      color: rgba(125, 152, 161, 0.1);
+      text-transform: uppercase;
+    }
+  }
+}
