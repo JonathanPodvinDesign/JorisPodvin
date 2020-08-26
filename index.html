@@ -1,38 +1,120 @@
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joris Podvin</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@300&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joris Podvin</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <header>
-    <ul>
-      <li id="home"><a href="index.html">Home</a></li>
-      <li id="experience"><a href="#experience">Expérience</a></li>
-      <li id="competences"><a href="#competences">Compétences</a></li>
-      <li id="contact"><a href="#contact">Contact</a></li>
-    </ul>
-  </header>
-  <!-- LOGO -->
-  <div class="logo">
-    <img src="/img/logo--noir.svg" alt="" />
-  </div>
-  <!-- TEXTE PRESENTATION -->
-  <div class="presentation">
-    <p>
-      J’ai actuellement terminé mes années de lycée et je suis à la recherche
-      d’une formation en alternance afin de continuer à accroître mes
-      compétences dans le développement informatique. Mes aptitudes sont le
-      travail de groupe, le sérieux et la régularité.
-    </p>
-  </div>
-  <div class="title">
-    <h2 id="formation" class="title--formation">Formations</h2>
-  </div>
-</body>
-
+  <body>
+    <header>
+      <ul>
+        <li id="home"><a href="index.html">Home</a></li>
+        <li id="experience"><a href="#formations">Formations</a></li>
+        <li id="competences"><a href="#competences">Compétences</a></li>
+        <li id="contact"><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="/img/logo--noir.svg" alt="" />
+    </div>
+    <!-- TEXTE PRESENTATION -->
+    <div class="presentation">
+      <p>
+        J’ai actuellement terminé mes années de lycée et je suis à la recherche
+        d’une formation en alternance afin de continuer à accroître mes
+        compétences dans le développement informatique. Mes aptitudes sont le
+        travail de groupe, le sérieux et la régularité.
+      </p>
+    </div>
+    <!-- FORMATIONS -->
+    <div class="title">
+      <h2 id="formation" class="title--formations">Formations</h2>
+    </div>
+    <!-- COMPETENCES -->
+    <div class="title">
+      <h2 id="competences" class="title--competences">Compétences</h2>
+    </div>
+    <div class="competences">
+      <div class="competences__competence">
+        <p>HTML</p>
+        <div class="competences__competence__bar">
+          <div class="competences__competence__bar__color"></div>
+        </div>
+      </div>
+      <div class="competences__competence">
+        <p>CSS</p>
+        <div class="competences__competence__bar">
+          <div class="competences__competence__bar__color"></div>
+        </div>
+      </div>
+      <div class="competences__competence">
+        <p>C#</p>
+        <div class="competences__competence__bar">
+          <div class="competences__competence__bar__color"></div>
+        </div>
+      </div>
+      <div class="competences__competence">
+        <p>C++</p>
+        <div class="competences__competence__bar">
+          <div class="competences__competence__bar__color"></div>
+        </div>
+      </div>
+      <div class="competences__competence">
+        <p>Photoshop</p>
+        <div class="competences__competence__bar">
+          <div class="competences__competence__bar__color"></div>
+        </div>
+      </div>
+      <div class="competences__competence">
+        <p>Adobe XD</p>
+        <div class="competences__competence__bar">
+          <div class="competences__competence__bar__color"></div>
+        </div>
+      </div>
+      <div class="competences__competence">
+        <p>Illustrator</p>
+        <div class="competences__competence__bar">
+          <div class="competences__competence__bar__color"></div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACT -->
+    <div class="title">
+      <h2 id="contact" class="title--contact">Contact</h2>
+    </div>
+    <div class="contact--container">
+      <div class="contact">
+        <div class="contact__informations">
+          <p>Joris Podvin</p>
+          <p>
+            123 Impasse de la crêche <br />
+            38390 - Porcieu Amblagnieu
+          </p>
+          <p>Tél : 07 50 81 91 41</p>
+        </div>
+        <div class="contact__formulaire">
+          <form action="">
+            <div class="contact__formulaire__names">
+              <input type="text" placeholder="Nom" />
+              <input type="text" placeholder="Prénom" />
+            </div>
+            <div class="contact__formulaire__email">
+              <input type="email" placeholder="Email" />
+            </div>
+            <textarea></textarea>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
