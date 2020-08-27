@@ -14,6 +14,16 @@ input {
   padding: 10px;
 }
 
+.container {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,6 +129,40 @@ header ul li a {
 
 .title--formations::after {
   content: "Education";
+}
+
+.formations {
+  width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formations__formation {
+  position: relative;
+  width: 50%;
+  padding: 30px 45px;
+  border-left: 3px solid rgba(125, 152, 161, 0.1);
+}
+
+.formations__formation__dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  background-color: #1c2321;
+  top: 0;
+  left: -4px;
+}
+
+.formations__formation p:nth-child(1) {
+  font-family: "Noticia Text", serif;
+  font-size: 25px;
+  font-style: italic;
 }
 
 .title--competences::after {

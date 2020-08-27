@@ -34,6 +34,35 @@
   }
 }
 
+.formations {
+  width: 960px;
+  display: flex;
+  flex-direction: column;
+
+  &__formation {
+    position: relative;
+    width: 50%;
+    padding: 30px 45px;
+    border-left: 3px solid rgba(125, 152, 161, 0.1);
+
+    &__dot {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50px;
+      background-color: $secondary-color;
+      top: 0;
+      left: -4px;
+    }
+
+    & p:nth-child(1) {
+      font-family: $primary-font;
+      font-size: 25px;
+      font-style: italic;
+    }
+  }
+}
+
 // COMPETENCES
 .title--competences {
   &::after {
