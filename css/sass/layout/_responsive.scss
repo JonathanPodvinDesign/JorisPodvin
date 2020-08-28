@@ -1,0 +1,62 @@
+@media(max-width : 960px) {
+
+    // HEADER
+    header {
+        & ul {
+            width: 720px;
+        }
+    }
+
+    // LOGO
+    .logo {
+        & img {
+            width: 200px;
+        }
+    }
+
+    // PRESENTATION
+    .presentation {
+        & p {
+            width: 540px;
+            font-size: 23px;
+        }
+    }
+
+    // FORMATIONS
+    .formations {
+        width: 720px;
+
+        &__formation {
+
+            & p:nth-child(2) {
+                font-size: 23px;
+            }
+
+            & p:nth-child(3) {
+                font-size: 23px;
+            }
+
+            & p:nth-child(4) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    // COMPETENCES
+    .competences {
+        &__competence {
+            width: 600px;
+        }
+    }
+
+    // CONTACT
+    .contact {
+        width: 900px;
+
+        &__informations {
+            & p {
+                font-size: 16px;
+            }
+        }
+    }
+}
