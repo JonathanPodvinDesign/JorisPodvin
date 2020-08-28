@@ -146,7 +146,11 @@ header ul li a {
   position: relative;
   width: 50%;
   padding: 30px 45px;
-  border-left: 3px solid rgba(125, 152, 161, 0.1);
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
 }
 
 .formations__formation__dot {
@@ -155,14 +159,101 @@ header ul li a {
   height: 8px;
   border-radius: 50px;
   background-color: #1c2321;
-  top: 0;
-  left: -4px;
 }
 
-.formations__formation p:nth-child(1) {
+.formations__formation__dot--left {
+  top: 0;
+  left: -5px;
+}
+
+.formations__formation__dot--right {
+  top: 0;
+  right: -5px;
+}
+
+.formations__formation__dot--bottom {
+  bottom: 0;
+  left: -5px;
+}
+
+.formations__formation p:nth-child(2) {
   font-family: "Noticia Text", serif;
+  color: #7d98a1;
   font-size: 25px;
   font-style: italic;
+  padding-bottom: 10px;
+}
+
+.formations__formation p:nth-child(3) {
+  font-family: "Montserrat", serif;
+  color: #1c2321;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.formations__formation p:nth-child(4) {
+  font-family: "Montserrat", serif;
+  color: #7d98a1;
+  font-size: 18px;
+}
+
+.formations__formation--right {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border-left: 3px solid rgba(125, 152, 161, 0.1);
+}
+
+.formations__formation--left {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border-right: 3px solid rgba(125, 152, 161, 0.1);
+  text-align: right;
+  width: calc(50% + 4px);
+}
+
+.formations__formation--space {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border-left: 3px solid rgba(125, 152, 161, 0.1);
+  height: 80px;
+}
+
+.formations__formation--space--bottom {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border-left: 3px solid rgba(125, 152, 161, 0.1);
+  height: 240px;
+}
+
+.formations__formation__date {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 25px;
+}
+
+.formations__formation__date p {
+  text-align: center;
+  font-family: "Noticia Text", serif;
+  font-style: italic;
+  color: #7d98a1;
+}
+
+.formations__formation__date p:first-child {
+  font-size: 25px;
+}
+
+.formations__formation__date p:last-child {
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .title--competences::after {

@@ -43,7 +43,12 @@
     position: relative;
     width: 50%;
     padding: 30px 45px;
-    border-left: 3px solid rgba(125, 152, 161, 0.1);
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
 
     &__dot {
       position: absolute;
@@ -51,14 +56,91 @@
       height: 8px;
       border-radius: 50px;
       background-color: $secondary-color;
-      top: 0;
-      left: -4px;
+
+      &--left {
+        top: 0;
+        left: -5px;
+      }
+
+      &--right {
+        top: 0;
+        right: -5px;
+      }
+
+      &--bottom {
+        bottom: 0;
+        left: -5px;
+      }
     }
 
-    & p:nth-child(1) {
+    & p:nth-child(2) {
       font-family: $primary-font;
+      color: $primary-color;
       font-size: 25px;
       font-style: italic;
+      padding-bottom: 10px;
+    }
+
+    & p:nth-child(3) {
+      font-family: $secondary-font;
+      color: $secondary-color;
+      font-size: 25px;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding-bottom: 5px;
+    }
+
+    & p:nth-child(4) {
+      font-family: $secondary-font;
+      color: $primary-color;
+      font-size: 18px;
+    }
+
+    &--right {
+      align-self: flex-end;
+      border-left: 3px solid rgba(125, 152, 161, 0.1);
+    }
+
+    &--left {
+      align-self: flex-start;
+      border-right: 3px solid rgba(125, 152, 161, 0.1);
+      text-align: right;
+      width: calc(50% + 4px);
+    }
+
+    &--space {
+      align-self: flex-end;
+      border-left: 3px solid rgba(125, 152, 161, 0.1);
+      height: 80px;
+    }
+
+    &--space--bottom {
+      align-self: flex-end;
+      border-left: 3px solid rgba(125, 152, 161, 0.1);
+      height: 240px;
+    }
+
+    &__date {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      margin-top: 25px;
+
+      & p {
+        text-align: center;
+        font-family: $primary-font;
+        font-style: italic;
+        color: $primary-color;
+
+        &:first-child {
+          font-size: 25px;
+        }
+
+        &:last-child {
+          font-size: 12px;
+          text-transform: uppercase;
+        }
+      }
     }
   }
 }
