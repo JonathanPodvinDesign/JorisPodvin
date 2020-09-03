@@ -59,6 +59,13 @@
             }
         }
     }
+
+    // FOOTER
+    footer {
+        & .footer {
+            width: 720px;
+        }
+    }
 }
 
 
@@ -150,6 +157,13 @@
                     background-color: $third-color;
                 }
             }
+        }
+    }
+
+    // FOOTER
+    footer {
+        & .footer {
+            width: 540px;
         }
     }
 }

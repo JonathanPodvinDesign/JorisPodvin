@@ -515,6 +515,9 @@ footer .footer__text {
   .contact__informations p {
     font-size: 16px;
   }
+  footer .footer {
+    width: 720px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -583,6 +586,9 @@ footer .footer__text {
   .contact__formulaire form input,
   .contact__formulaire form textarea {
     background-color: #eef1ef;
+  }
+  footer .footer {
+    width: 540px;
   }
 }
 /*# sourceMappingURL=style.css.map */
