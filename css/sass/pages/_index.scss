@@ -169,6 +169,7 @@
       text-transform: uppercase;
       font-size: 14px;
       width: 20%;
+      line-height: 2;
     }
 
     &__bar {
@@ -315,7 +316,7 @@
         font-size: 14px;
         padding: 7px 20px;
         color: $third-color;
-        background-color: $fourth-color;
+        background-color: $fifth-color;
         border: none;
       }
     }
@@ -325,7 +326,7 @@
 // FOOTER
 footer {
   width: 100vw;
-  background-color: $fourth-color;
+  background-color: $fifth-color;
   display: flex;
   justify-content: center;
 

@@ -51,11 +51,104 @@
 
     // CONTACT
     .contact {
-        width: 900px;
+        width: 720px;
 
         &__informations {
             & p {
                 font-size: 16px;
+            }
+        }
+    }
+}
+
+
+@media(max-width : 720px) {
+
+    // HEADER
+    header {
+        & ul {
+            width: 540px;
+        }
+    }
+
+    // LOGO
+    .logo {
+        & img {
+            width: 165px;
+        }
+    }
+
+    // PRESENTATION
+    .presentation {
+        & p {
+            width: 400px;
+            font-size: 18px;
+        }
+    }
+
+    // FORMATIONS
+    .formations {
+        width: 720px;
+
+        &__formation {
+
+            & p:nth-child(2) {
+                font-size: 18px;
+            }
+
+            & p:nth-child(3) {
+                font-size: 20px;
+            }
+
+            & p:nth-child(4) {
+                font-size: 12px;
+            }
+        }
+    }
+
+    // COMPETENCES
+    .competences {
+        &__competence {
+            width: 500px;
+
+            & p {
+                font-size: 12px;
+            }
+        }
+    }
+
+    // CONTACT
+    .contact {
+        width: 540px;
+        flex-direction: column;
+        background-color: transparent;
+        box-shadow: 2px 2px 10px rgba(28, 35, 33, 0.0);
+
+        &__informations {
+            width: 100%;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin-bottom: 50px;
+
+            & p {
+                font-size: 16px;
+                align-self: center;
+                text-align: center;
+            }
+        }
+
+        &__formulaire {
+            width: 100%;
+            padding: 0;
+
+            & form {
+
+                & input,
+                textarea {
+                    background-color: $third-color;
+                }
             }
         }
     }
